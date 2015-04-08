@@ -65,7 +65,7 @@ from Configuration.AlCa.GlobalTag import GlobalTag
 process.GlobalTag = GlobalTag(process.GlobalTag, 'auto:run2_mc', '')
 
 process.generator = cms.EDFilter("AMPTGeneratorFilter",
-    alpha = cms.double(0.47140452),
+    alpha = cms.double(0.33),   #new tune
     amptmode = cms.int32(1),
     bMax = cms.double(30),
     bMin = cms.double(0),
@@ -94,7 +94,7 @@ process.generator = cms.EDFilter("AMPTGeneratorFilter",
     ktkick = cms.int32(1),
     maxmiss = cms.int32(1000),
     minijetpt = cms.double(-7.0),
-    mu = cms.double(3.2264),
+    mu = cms.double(2.265),  #new tune
     ntmax = cms.int32(1000),
     phidecay = cms.bool(True),
     popcornmode = cms.bool(True),
@@ -105,8 +105,8 @@ process.generator = cms.EDFilter("AMPTGeneratorFilter",
     quenchingpar = cms.double(2.0),
     rotateEventPlane = cms.bool(True),
     shadowingmode = cms.bool(True),
-    stringFragA = cms.double(2.2),
-    stringFragB = cms.double(0.5),
+    stringFragA = cms.double(0.55), #new tune
+    stringFragB = cms.double(0.15), #new tune
     targ = cms.string('A')
 )
 
